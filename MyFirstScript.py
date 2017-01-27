@@ -21,6 +21,9 @@ def find_doug(list_of_words): # Function
 			print "We found something else"
 			print eachWord
 			
+#my_words = ["Doug", "the", "Pug", "is", "cooler", "than", "you"] #List of strings			
+#find_doug(my_words)
+			
 def number_fun(an_integer, a_float):
 
 	"""Perform some numerical operations on the input
@@ -39,12 +42,20 @@ def number_fun(an_integer, a_float):
 	
 an_integer = 9
 a_float = 5.2
-number_fun(an_integer, a_float)
+#number_fun(an_integer, a_float)
 
 an_integer = 39
 a_float = 53333.25757573463636
-number_fun(an_integer, a_float)
+#number_fun(an_integer, a_float)
 
+def subtract_forever(x):
 
-#my_words = ["Doug", "the", "Pug", "is", "cooler", "than", "you"] #List of strings			
-#find_doug(my_words)
+	""" Take in a number and keeping subtracting 1 until it is 0.
+	Print the intermediate results.
+	"""
+	
+	while x>0:
+		x=x-1
+		print x
+	
+subtract_forever(5)
